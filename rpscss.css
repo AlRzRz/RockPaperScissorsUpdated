@@ -1,0 +1,113 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'JetBrains Mono', monospace;
+    gap: 8px;
+
+}
+
+
+/* HEADER START */
+
+.logo-header {
+    background-color: #b3bcbd;
+    height: 95px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logopic {
+    height: 93px;
+}
+
+
+/* HEADER END */
+/* SCOREBOARD START */
+
+.scoreboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: bisque;
+    height: 400px;
+
+}
+
+.playerside, .scoreseparator, .compside {
+    background-color: black;
+    flex: 1;
+    border-color: white;
+    border-style: solid;
+    height: 400px;
+    color: white;
+    
+}
+
+.scoreseparator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 170px;
+
+}
+
+.separator {
+    font-size: 140px;
+}
+
+.messagelog {
+    margin-top: 20px;
+}
+
+.playerside, .compside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.playerimg, .playerscore, .compimg, .compscore {
+    flex: 1;
+    border-style: solid;
+}
+
+.playerimg, .compimg {
+    height: 110px;
+    margin-top: 2px;
+}
+
+.playerscore, .compscore {
+    display: flex;
+    align-items: center;
+    font-size: 140px;
+}
+
+.playerimg, .playerscore {
+    margin-left: 50px;
+}
+
+.compimg, .compscore {
+    margin-right: 50px;
+}
+
+/* SCOREBOARD END */
+/* BUTTONSCREEN START */
+
+.buttonScreen {
+    background-color: green;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    
+}
+
+
