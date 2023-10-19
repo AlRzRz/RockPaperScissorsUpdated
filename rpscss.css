@@ -1,14 +1,42 @@
 body {
     background-color: black;
-    display: flex;
-    flex-direction: column;
     margin: 0;
     min-height: 100vh;
     font-family: 'JetBrains Mono', monospace;
-    gap: 8px;
-
 }
 
+/* START SCREEN */
+
+
+.start-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.startButton {
+    height: 150px;
+    width: 400px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 50px;
+}
+
+.startButton:hover {
+    background-color: green;
+    transition: 0.15s;
+}
+
+
+ /* START END */
+
+
+.main-game {
+    display: none;
+    flex-direction: column;
+    margin: 0;
+
+}
 
 /* HEADER START */
 
@@ -39,11 +67,16 @@ body {
 
 }
 
+.messagelog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .playerside, .scoreseparator, .compside {
     background-color: black;
     flex: 1;
-    border-color: white;
-    border-style: solid;
     height: 400px;
     color: white;
     
@@ -54,7 +87,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 170px;
+    gap: 50px;
 
 }
 
@@ -66,6 +99,11 @@ body {
     margin-top: 20px;
 }
 
+.p1, .p2 {
+    font-size: 20px;
+}
+
+
 .playerside, .compside {
     display: flex;
     flex-direction: column;
@@ -75,12 +113,11 @@ body {
 
 .playerimg, .playerscore, .compimg, .compscore {
     flex: 1;
-    border-style: solid;
 }
 
 .playerimg, .compimg {
     height: 110px;
-    margin-top: 2px;
+    margin-top: 7px;
 }
 
 .playerscore, .compscore {
@@ -97,17 +134,143 @@ body {
     margin-right: 50px;
 }
 
+.messagelog {
+    font-size: 20px;
+}
+
 /* SCOREBOARD END */
+/* ROUNDTEXT START */
+
+.rounddecide-container {
+    height: 250px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: whitesmoke;
+    gap: 50px;
+}
+
+
+.playerselectionimg, .compselectionimg {
+    height: 180px;
+}
+
+.playerselectionimg {
+    margin-left: 50px;
+}
+
+.compselectionimg {
+    margin-right: 50px;
+}
+
+.roundtext {
+    color: whitesmoke;
+    font-size: 24px;
+    width: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* ROUNDTEXT END */
 /* BUTTONSCREEN START */
 
 .buttonScreen {
-    background-color: green;
+    background-color: black;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
+    margin-top: 40px;
     
 }
 
+.button {
+    background-color: grey;
+    color: whitesmoke;
+    border-radius: 12px;
+    padding: 30px;
+    width: 200px;
+    font-size: large;
+    border: none;
+    box-shadow: 7px 7px #2f3030;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+}
 
+.button:hover {
+    background-color: whitesmoke;
+    color: black;
+    transition: 0.4s;
+}
+
+
+.button:active {
+    background-color: green;
+    color: black;
+    transition: 0.1s ease-in-out;
+    
+}
+
+/* BUTTONSCREEN END */
+/* GAMEEND SCREEN START */
+
+.game-end-screen {
+    display: none;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.winnerFinalize {
+    color: whitesmoke;
+    margin-bottom: 150px;
+    font-size: 70px;
+}
+
+.buttoncontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.homeButton {
+    background-color: rgb(20, 20, 20);
+    color: whitesmoke;
+    height: 150px;
+    width: 300px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 50px;
+}
+
+.homeButton:hover {
+    background-color: green;
+    transition: 0.2s ease-in-out;
+}
+
+.restartButton {
+    background-color: orange;
+    height: 150px;
+    width: 400px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 50px;
+}
+
+.restartButton:hover {
+    background-color: green;
+    transition: 0.2s ease-in-out;
+}
+
+/* GAMEEND SCREEN END */

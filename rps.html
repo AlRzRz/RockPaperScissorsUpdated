@@ -4,38 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="rpsjs.js" defer></script>
+    <script src="rpsjsupdated.js" defer></script>
     <link rel="stylesheet" type="text/css" href="rpscss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="logo-header">
-        <img src="RPSpic2.png" class="logopic">
+    <div class="start-screen">
+        <button class="startButton">START</button>
     </div>
-
-    <div class="scoreboard">
-        <div class="playerside">
-            <img src="humanrps.png" class="playerimg">
-            <div class="playerscore">s</div>
+    <div class="main-game">
+        <div class="logo-header">
+            <img src="RPSpic2.png" class="logopic">
         </div>
 
-        <div class="scoreseparator">
-            <div class="messagelog">test</div>
-            <div class="separator">-</div>
+        <div class="scoreboard">
+            <div class="playerside">
+                <img src="humanrps.png" class="playerimg">
+                <div class="playerscore">0</div>
+            </div>
+
+            <div class="scoreseparator">
+                <div class="messagelog">
+                    <p class="p1">Welcome to the Game!</p>
+                    <p class="p2">Pick Either Rock, Paper, or Scissors Below!</p>
+                </div>
+                <div class="separator">-</div>
+            </div>
+
+            <div class="compside">
+                <img src="robotrps.png" class="compimg">
+                <div class="compscore">0</div>
+            </div>
         </div>
 
-        <div class="compside">
-            <img src="robotrps.png" class="compimg">
-            <div class="compscore">s</div>
+        <div class="rounddecide-container">
+            <img src="questionmark.png" class="playerselectionimg">
+            <div class="roundtext"></div>
+            <img src="questionmark.png" class="compselectionimg">
+        </div>
+
+
+        <div class="buttonScreen">
+            <button class="rock button">Rock</button>
+            <button class="paper button">Paper</button>
+            <button class="scissors button">Scissors</button>
         </div>
     </div>
-
-    <div class="buttonScreen">
-        <button class="rock">Rock</button>
-        <button class="paper">Paper</button>
-        <button class="scissors">Scissors</button>
+    <div class="game-end-screen">
+        <div class="winnerFinalize"></div>
+        <div class="buttoncontainer">
+            <button class="homeButton">HOME</button>
+            <button class="restartButton">RESTART?</button>
+        </div>
     </div>
 </body>
 </html>
+
+
